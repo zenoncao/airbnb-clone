@@ -16,6 +16,7 @@ specifiers:
   leaflet: ^1.9.3
   next: 13.4.1
   next-auth: ^4.22.1
+  next-cloudinary: ^4.10.0
   postcss: 8.4.23
   prisma: ^4.14.0
   query-string: ^8.1.0
@@ -45,6 +46,7 @@ dependencies:
   leaflet: registry.npmmirror.com/leaflet/1.9.3
   next: registry.npmmirror.com/next/13.4.1_biqbaboplfbrettd7655fr4n2y
   next-auth: registry.npmmirror.com/next-auth/4.22.1_2xek2u27flvv5bywadnu4xxgx4
+  next-cloudinary: registry.npmmirror.com/next-cloudinary/4.10.0_next@13.4.1+react@18.2.0
   postcss: registry.npmmirror.com/postcss/8.4.23
   query-string: registry.npmmirror.com/query-string/8.1.0
   react: registry.npmmirror.com/react/18.2.0
@@ -134,6 +136,37 @@ packages:
       '@babel/helper-string-parser': registry.npmmirror.com/@babel/helper-string-parser/7.21.5
       '@babel/helper-validator-identifier': registry.npmmirror.com/@babel/helper-validator-identifier/7.19.1
       to-fast-properties: registry.npmmirror.com/to-fast-properties/2.0.0
+    dev: false
+
+  registry.npmmirror.com/@cloudinary-util/url-loader/3.6.1:
+    resolution: {integrity: sha512-VxyJ1PhkDMhGay9Z8kdFlNwD13cGQdW+GoW0dj67FRHG5Csl9h6qeizPw/bWsDj9lBcRVZGBlLKEwDECXQAukg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary-util/url-loader/-/url-loader-3.6.1.tgz}
+    name: '@cloudinary-util/url-loader'
+    version: 3.6.1
+    dependencies:
+      '@cloudinary-util/util': registry.npmmirror.com/@cloudinary-util/util/2.0.1
+      '@cloudinary/url-gen': registry.npmmirror.com/@cloudinary/url-gen/1.10.0
+    dev: false
+
+  registry.npmmirror.com/@cloudinary-util/util/2.0.1:
+    resolution: {integrity: sha512-d2imgUjYTLjv8ZhZPMAts/uPbMvIE71X4I/5hwdY/7vM4BuFQoJMSyq+h2pW1z1MyGG9BOWBm70vp082lSrbEQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary-util/util/-/util-2.0.1.tgz}
+    name: '@cloudinary-util/util'
+    version: 2.0.1
+    dev: false
+
+  registry.npmmirror.com/@cloudinary/transformation-builder-sdk/1.2.8:
+    resolution: {integrity: sha512-Rxvt/tjzTNzHDvH2l5ZLky/ahp60pHf51uLfzkFA/Mrh6Uj8aMHne0TRbYvpaH4t8l9wLGcdK6SbBqKVzlN16A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.2.8.tgz}
+    name: '@cloudinary/transformation-builder-sdk'
+    version: 1.2.8
+    dependencies:
+      '@cloudinary/url-gen': registry.npmmirror.com/@cloudinary/url-gen/1.10.0
+    dev: false
+
+  registry.npmmirror.com/@cloudinary/url-gen/1.10.0:
+    resolution: {integrity: sha512-J3V+gzT6Tepw9bMrR3prWVbW22cIFJtPS8Wkt1WFSZVHWpZx8/vv9ACHaxUmRqaSkjhX8ErsuzDY5YxdWnaCbw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary/url-gen/-/url-gen-1.10.0.tgz}
+    name: '@cloudinary/url-gen'
+    version: 1.10.0
+    dependencies:
+      '@cloudinary/transformation-builder-sdk': registry.npmmirror.com/@cloudinary/transformation-builder-sdk/1.2.8
     dev: false
 
   registry.npmmirror.com/@emotion/babel-plugin/11.11.0:
@@ -3122,6 +3155,22 @@ packages:
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
       uuid: registry.npmmirror.com/uuid/8.3.2
+    dev: false
+
+  registry.npmmirror.com/next-cloudinary/4.10.0_next@13.4.1+react@18.2.0:
+    resolution: {integrity: sha512-yOoG0jFO4y8+hLR+07W2QkTvFKKe6padKVpemEnkaOV/HxBnoHhB4gjXoHIUEVc9aKjEsji+3ViwwFzWR4ukMA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/next-cloudinary/-/next-cloudinary-4.10.0.tgz}
+    id: registry.npmmirror.com/next-cloudinary/4.10.0
+    name: next-cloudinary
+    version: 4.10.0
+    peerDependencies:
+      next: ^12 || ^13
+      react: ^17 || ^18
+    dependencies:
+      '@cloudinary-util/url-loader': registry.npmmirror.com/@cloudinary-util/url-loader/3.6.1
+      '@cloudinary-util/util': registry.npmmirror.com/@cloudinary-util/util/2.0.1
+      '@cloudinary/url-gen': registry.npmmirror.com/@cloudinary/url-gen/1.10.0
+      next: registry.npmmirror.com/next/13.4.1_biqbaboplfbrettd7655fr4n2y
+      react: registry.npmmirror.com/react/18.2.0
     dev: false
 
   registry.npmmirror.com/next/13.4.1_biqbaboplfbrettd7655fr4n2y:
