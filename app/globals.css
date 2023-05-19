@@ -15,6 +15,15 @@ body,
   z-index: 0 !important
 }
 
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 16px;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
